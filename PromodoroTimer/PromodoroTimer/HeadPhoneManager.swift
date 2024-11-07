@@ -45,7 +45,11 @@ class HeadPhoneManager: ObservableObject {
                 self.pitch = motion.attitude.pitch - self.initialPitch
                 self.roll = motion.attitude.roll - self.initialRoll
                 self.yaw = motion.attitude.yaw - self.initialYaw
+
+                print("Pitch: \(self.pitch), Roll: \(self.roll), Yaw: \(self.yaw)")
+
             }
+            
         }
     }
 
